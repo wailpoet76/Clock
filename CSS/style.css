@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: "cairo";
+    box-sizing: border-box;
+    color: white;
+}
+
+section {
+    background-color: rgba(51, 51, 51);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 20em;
+    height: 20em;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px 15px #aaaaaa80, inset 0 0 10px 15px #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../media/images/landing.png);
+    background-size: cover;
+}
+
+.clock-face {
+    position: relative;
+}
+
+.clock-face span {
+    position: absolute;
+    font-size: 2em;
+    color: #f02906;
+}
+
+.clock-face span:nth-child(1) {
+    right: 2.4em;
+    top: .5em;
+}
+
+.clock-face span:nth-child(2) {
+    right: 1em;
+    top: 2em;
+}
+
+.clock-face span:nth-child(3) {
+    right: 0.5em;
+    top: 4em;
+}
+
+.clock-face span:nth-child(4) {
+    right: 1em;
+    top: 6em;
+}
+
+.clock-face span:nth-child(5) {
+    right: 2.4em;
+    top: 7.5em;
+}
+
+.clock-face span:nth-child(6) {
+    right: 4.5em;
+    top: 8.2em;
+}
+.clock-face span:nth-child(7) {
+    right: 6.6em;
+    top: 7.5em;
+}
+
+.clock-face span:nth-child(8) {
+    right: 8em;
+    top: 6.1em;
+}
+
+.clock-face span:nth-child(9) {
+    right: 8.8em;
+    top: 4em;
+}
+
+.clock-face span:nth-child(10) {
+    right: 7.7em;
+    top: 2em;
+}
+
+.clock-face span:nth-child(11) {
+    right: 6.3em;
+    top: .5em;
+}
+.clock-face span:nth-child(12) {
+    right: 4.3em;
+    top: 0;
+}
+
+
+.hand {
+    width: 10em;
+    height: 0.2em;
+    background-color: greenyellow;
+    position: absolute;
+    top: 10em;
+    left: 2em;
+}
+
+.hand.Hour-arm {
+    width: 8em;
+    left: 4em;
+    top: 10em;
+    transform-origin: 6em center;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.hand.Minute-arm {
+    transform-origin: 8em center;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}
+
+
+.hand.Second-arm {
+    width: 10em;
+    background-color: rgb(252, 17, 193);
+    transform-origin: 8em center;
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+}
